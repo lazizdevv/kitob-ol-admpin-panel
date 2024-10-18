@@ -51,7 +51,7 @@ export const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-dark p-3">
-      <div className="bg-white p-8 rounded-lg shadow-lg shadow-primary max-w-lg w-full">
+      <div className="bg-primary p-8 rounded-lg shadow-lg shadow-accent max-w-lg w-full">
         <Typography.Title level={2} className="text-center mb-6">
           Kirish
         </Typography.Title>
@@ -66,7 +66,7 @@ export const Login = () => {
               type="email"
               placeholder="exsample@gmail.com"
               onChange={(e) => setValue("email", e.target.value)}
-              className="p-2"
+              className="p-2 bg-accent"
             />
           </Form.Item>
           <Form.Item
@@ -78,7 +78,7 @@ export const Login = () => {
               {...register("password", { required: "Password is required" })}
               placeholder="********"
               onChange={(e) => setValue("password", e.target.value)}
-              className="p-2"
+              className="p-2 bg-accent"
             />
           </Form.Item>
           <Form.Item>
